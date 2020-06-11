@@ -56,15 +56,15 @@
     }
 
     .m50 {
-      margin-top: 50px;
+      margin-top: 0px;
     }
 
     .m150 {
-      margin-top: 150px;
+      margin-top: 50px;
     }
 
     .m250 {
-      margin-top: 250px;
+      margin-top: 100px;
     }
 
     .p {
@@ -72,9 +72,23 @@
       /* left: 25px; */
     }
 
+    .card {
+      z-index: 2;
+    }
+
     @media only screen and (min-width: 768px) {
       .p {
         left: 25px;
+      }
+
+      .stick {
+        width: 700px;
+        height: 5px;
+        background-color: tomato;
+        position: absolute;
+        z-index: 1;
+        margin: 0 0 0 200px;
+        align-self: center;
       }
     }
 
@@ -130,6 +144,20 @@
       .p {
         margin: 0 auto;
         align-self: center;
+      }
+
+      .stick {
+        width: 5px;
+        height: 700px;
+        background-color: tomato;
+        position: absolute;
+        z-index: 1;
+        margin: 0 0 0 267px;
+        align-self: center;
+      }
+
+      .card-c {
+        text-align: center;
       }
 
     }
@@ -220,7 +248,7 @@
 
 
   <!-- relative card  -->
-  <div class="row" style="background-color: #f0f1f6;">
+  <div class="row card-c" style="background-color: #f0f1f6;">
     <div class="container">
       <div class="row py-5">
 
@@ -264,19 +292,19 @@
                 customizable links, supercharging audience engagement
               </p>
             </div>
-
-
           </div>
-        </div>
 
+        </div>
       </div>
 
 
     </div>
+    <div class="stick"></div>
+
   </div>
 
 
-
+  <!-- relative card  -->
 
 
 
